@@ -1,0 +1,23 @@
+{
+  "id": "adults-on-nass",
+  "type": "line",
+  "title": "Adults registered on NASS, 2022 to 2025",
+  "subtitle": "",
+  "x_field": "edition_year",
+  "x_label": "Edition",
+  "y_label": "Adults (n)",
+  "source": "NASS 2022 table 2.5; NASS 2023 table 2.5; NASS 2024 table 2.5; NASS 2025 table 2.5",
+  "source_note": "All-ages totals are not shown: children's coverage changed twice over this period.",
+  "suppressed_present": false,
+  "labels": ["2022", "2023", "2024", "2025"],
+  "series": [
+    {
+      "name": "Total population",
+      "color": "#000099",
+      "dash": "",
+      "point": "circle",
+      "data": [28859, 31698, 34652, 38288],
+      "suppressed": [false, false, false, false]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NASS statistics — visualisation prototype</title>
+<meta name="description" content="A prototype turning published NASS statistical tables into interactive charts.">
+<link rel="stylesheet" href="{{ASSETS}}css/tokens.css">
+<link rel="stylesheet" href="{{ASSETS}}css/site.css">
+</head>
+<body>
+
+<!--<div class="prototype-notice">
+  <div class="wrap"><div class="content">
+    <strong>Prototype.</strong> Figures reproduced from published NASS statistical bulletins.
+    Not an official HRB publication.
+  </div></div>
+</div>-->
+
+<div class="wrap"><div class="content">
+
+  <header class="masthead">
+    <p class="eyebrow">National Ability Supports System</p>
+    <h1>NASS statistics, visualised</h1>
+    <p class="standfirst">A working prototype that turns already-published NASS statistical
+    tables into interactive charts, built from a reproducible pipeline and hosted as a
+    static site.</p>
+  </header>
+
+  <main>
+    <p>This site can allow for visualisation and navigation of previously validated and published Excel workbooks produced by HRB, with citable URLs.</p>
+
+    <h2>Editions</h2>
+    <ul class="editions">
+{{EDITIONS}}
+    </ul>
+
+    <div class="note">
+      <h3>What this demonstrates</h3>
+      <p>Workflow. Adding a year: add new Excel workbook , add a row to the manifest.csv, re-run
+      the pipeline. Charts, data tables and downloads all regenerate. No page
+      edited by hand.</p>
+      <p>The pipeline refuses to build if a table it depends on has moved or been renamed, also
+       writes a report listing every difference it finds between editions.</p>
+    </div>
+  </main>
+
+  <div class="attribution">
+    <p>Reproduced from tables published by the Health Research Board. This is a prototype for
+    internal review.</p>
+  </div>
+
+</div></div>
+
+<footer class="site"><div class="wrap"><div class="content">
+  <p>Generated {{GENERATED}} by the NASS visualisation pipeline.</p>
+</div></div></footer>
+
+</body>
+</html>

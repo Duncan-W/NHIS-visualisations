@@ -1,0 +1,72 @@
+[
+  {
+    "id": "adults-on-nass",
+    "title": "Adults registered on NASS, 2022 to 2025",
+    "type": "line",
+    "edition": "trend",
+    "topic": "occupational-status"
+  },
+  {
+    "id": "occupational-status",
+    "title": "Occupational status of adults on NASS, 2022 to 2025",
+    "type": "line",
+    "edition": "trend",
+    "topic": "occupational-status"
+  },
+  {
+    "id": "living-arrangements",
+    "title": "Living arrangements of adults on NASS, 2022 to 2025",
+    "type": "line",
+    "edition": "trend",
+    "topic": "living-arrangements"
+  },
+  {
+    "id": "carer-relationship",
+    "title": "Relationship of the primary carer to adults on NASS, 2022 to 2025",
+    "type": "line",
+    "edition": "trend",
+    "topic": "carer-relationship"
+  },
+  {
+    "id": "carer-age",
+    "title": "Age group of primary carers, 2022 to 2025",
+    "type": "line",
+    "edition": "trend",
+    "topic": "carer-age"
+  },
+  {
+    "id": "day-services",
+    "title": "Adults accessing a day service, 2022 to 2025",
+    "type": "line",
+    "edition": "trend",
+    "topic": "day-services-current"
+  },
+  {
+    "id": "age-sex-2025",
+    "title": "Service users on NASS by age and sex, 2025",
+    "type": "bar",
+    "edition": "2025",
+    "topic": "age-sex"
+  },
+  {
+    "id": "adult-rate-by-county-2025",
+    "title": "Adults accessing disability services per 1,000 population, by county, 2025",
+    "type": "bar",
+    "edition": "2025",
+    "topic": "adult-rate-by-county"
+  },
+  {
+    "id": "registrations-by-region-2025",
+    "title": "Service users on NASS by HSE Health Region, 2025",
+    "type": "column",
+    "edition": "2025",
+    "topic": "registrations-by-health-region-service"
+  },
+  {
+    "id": "id-level-2025",
+    "title": "Level of intellectual disability among adults on NASS, 2025",
+    "type": "column",
+    "edition": "2025",
+    "topic": "id-level"
+  }
+]

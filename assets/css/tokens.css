@@ -1,0 +1,68 @@
+/* GENERATED FILE - do not edit.
+   Copied from config/tokens.css by R/06-render.R on every run.
+   Edit config/tokens.css instead. */
+/* ---------------------------------------------------------------------------
+   Design tokens derived from the HRB website stylesheet (style.css).
+   Adjust here rather than in the page CSS.
+
+   Apercu is a licensed typeface and is NOT vendored into this repository, so
+   the stack falls back to a neutral grotesque with similar proportions. If the
+   HRB webfonts are licensed for this use, add the @font-face rules and put
+   'Apercu' at the front of --font-body.
+
+   Colours marked "chart-safe" meet WCAG 2.1 AA 3:1 contrast for graphical
+   objects against both --colour-page and --colour-tint. The HRB yellow
+   (#fedf00, 1.33:1), aqua-marine (#9ccbda, 1.75:1) and green (#1ab586, 2.63:1)
+   do NOT, and must not be used to carry meaning in a chart.
+   --------------------------------------------------------------------------- */
+
+:root {
+  /* Typeface */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-numeric: "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+
+  /* Type scale, from the HRB site */
+  --size-root: 16px;
+  --size-h1: 3rem;        --line-h1: 3.375rem;   --track-h1: -0.96px;
+  --size-h2: 1.875rem;    --line-h2: 2.375rem;
+  --size-h3: 1.25rem;     --line-h3: 1.75rem;
+  --size-body: 1rem;      --line-body: 1.5rem;
+  --size-small: 0.875rem; --line-small: 1.375rem;
+
+  /* HRB brand colours */
+  --hrb-navy: #000099;
+  --hrb-blue: #0000ff;
+  --hrb-dark-blue: #1218c6;
+  --hrb-blue-50: #f2f2ff;
+  --hrb-blue-100: #e5e5ff;
+  --hrb-blue-200: #ccccff;
+  --hrb-yellow: #fedf00;
+  --hrb-pink: #e21776;
+  --hrb-brown: #766a62;
+  --hrb-grey: #222534;
+  --hrb-grey-blue: #72778d;
+  --hrb-aqua: #9ccbda;
+  --hrb-green: #1ab586;
+
+  /* Page furniture */
+  --colour-page: #ffffff;
+  --colour-tint: var(--hrb-blue-50);
+  --colour-text: var(--hrb-grey);
+  --colour-muted: var(--hrb-grey-blue);
+  --colour-link: var(--hrb-blue);
+  --colour-rule: var(--hrb-blue-100);
+
+  /* Chart-safe series colours - keep in step with config/palette.csv */
+  --series-1: #000099;  /* navy      14.38:1 */
+  --series-2: #e21776;  /* pink       4.55:1 */
+  --series-3: #0f7a58;  /* green      5.32:1, darkened from --hrb-green */
+  --series-4: #766a62;  /* brown      5.24:1 */
+  --series-5: #72778d;  /* grey-blue  4.43:1 */
+  --chart-axis: #222534;
+  --chart-grid: #e5e5ff;
+
+  /* Layout */
+  --measure: 1150px;      /* .container-inner on the HRB site */
+  --page-max: 1280px;     /* .container */
+  --space: 8px;
+}

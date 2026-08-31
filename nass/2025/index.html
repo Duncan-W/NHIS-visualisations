@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<!--
+  GENERATED FILE - do not edit.
+  Overwritten by R/06-render.R every time the pipeline runs.
+  Edit site/_template/edition.html instead, then re-run: Rscript R/run-all.R
+-->
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NASS 2025 — statistics on disability services in Ireland (prototype)</title>
+<meta name="description" content="Interactive charts reproduced from the published NASS 2025 statistical tables. Prototype for internal review.">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+
+<!--<div class="prototype-notice">
+  <div class="wrap"><div class="content">
+    <strong>Prototype.</strong> Figures reproduced from published NASS statistical bulletins.
+    Not an official HRB publication.
+  </div></div>
+</div>-->
+
+<div class="wrap"><div class="content">
+
+  <header class="masthead">
+    <p class="eyebrow">National Ability Supports System</p>
+    <h1>Disability services in Ireland, 2025</h1>
+    <p class="standfirst">11 charts reproduced from the published NASS statistical
+    tables. Trends run 2022 to 2025; single-year profiles show 2025 only.
+    Every chart carries the figures behind it as a table you can read or download.</p>
+  </header>
+
+  <main>
+    <div class="note">
+      <h3>Reading these figures</h3>
+      <p> The trend charts here use the adult
+      population, which is defined consistently from 2022 to 2025.</p>
+      <p>Trends are shown as counts rather than published percentages</p>
+      <p>Full detail is in the pipeline's validation report, which lists every difference
+      found between editions.</p>
+    </div>
+
+<section class="chart-block" data-chart-id="adults-on-nass" aria-labelledby="h-adults-on-nass">
+  <h3 id="h-adults-on-nass">Adults registered on NASS, 2022 to 2025</h3>
+  <p class="subtitle"></p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2022 table 2.5; NASS 2023 table 2.5; NASS 2024 table 2.5; NASS 2025 table 2.5</p>
+    <p>All-ages totals are not shown: children's coverage changed twice over this period.</p>
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Adults registered on NASS, 2022 to 2025</caption>
+        <thead><tr>
+          <th scope="col">Edition</th>
+          <th scope="col">Total population</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">2022</th>
+          <td>28,859</td>
+        </tr>
+        <tr>
+          <th scope="row">2023</th>
+          <td>31,698</td>
+        </tr>
+        <tr>
+          <th scope="row">2024</th>
+          <td>34,652</td>
+        </tr>
+        <tr>
+          <th scope="row">2025</th>
+          <td>38,288</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/adults-on-nass.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="occupational-status" aria-labelledby="h-occupational-status">
+  <h3 id="h-occupational-status">Occupational status of adults on NASS, 2022 to 2025</h3>
+  <p class="subtitle"></p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2022 table 2.5; NASS 2023 table 2.5; NASS 2024 table 2.5; NASS 2025 table 2.5</p>
+    <p>2024 alone reports a 'Supported employment' category, not shown.</p>
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Occupational status of adults on NASS, 2022 to 2025</caption>
+        <thead><tr>
+          <th scope="col">Edition</th>
+          <th scope="col">Training/day programme</th>
+          <th scope="col">Unable to work due to disability</th>
+          <th scope="col">In paid employment</th>
+          <th scope="col">Unemployed</th>
+          <th scope="col">Retired</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">2022</th>
+          <td>8,383</td>
+          <td>8,328</td>
+          <td>2,139</td>
+          <td>2,397</td>
+          <td>1,588</td>
+        </tr>
+        <tr>
+          <th scope="row">2023</th>
+          <td>12,088</td>
+          <td>8,206</td>
+          <td>3,148</td>
+          <td>2,596</td>
+          <td>1,808</td>
+        </tr>
+        <tr>
+          <th scope="row">2024</th>
+          <td>13,394</td>
+          <td>8,720</td>
+          <td>2,928</td>
+          <td>3,022</td>
+          <td>1,944</td>
+        </tr>
+        <tr>
+          <th scope="row">2025</th>
+          <td>14,951</td>
+          <td>8,809</td>
+          <td>2,922</td>
+          <td>3,191</td>
+          <td>1,967</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/occupational-status.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="living-arrangements" aria-labelledby="h-living-arrangements">
+  <h3 id="h-living-arrangements">Living arrangements of adults on NASS, 2022 to 2025</h3>
+  <p class="subtitle"></p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2022 table 2.7; NASS 2023 table 2.6; NASS 2024 table 2.6; NASS 2025 table 2.6</p>
+    <p>Sub-categories within each grouping are in the data table below.</p>
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Living arrangements of adults on NASS, 2022 to 2025</caption>
+        <thead><tr>
+          <th scope="col">Edition</th>
+          <th scope="col">Living with family</th>
+          <th scope="col">Residential setting</th>
+          <th scope="col">Living alone</th>
+          <th scope="col">Living with non-relatives</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">2022</th>
+          <td>16,611</td>
+          <td>7,569</td>
+          <td>2,920</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <th scope="row">2023</th>
+          <td>17,941</td>
+          <td>8,027</td>
+          <td>3,361</td>
+          <td>452</td>
+        </tr>
+        <tr>
+          <th scope="row">2024</th>
+          <td>19,874</td>
+          <td>8,225</td>
+          <td>3,819</td>
+          <td>482</td>
+        </tr>
+        <tr>
+          <th scope="row">2025</th>
+          <td>21,428</td>
+          <td>8,539</td>
+          <td>4,223</td>
+          <td>525</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/living-arrangements.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="carer-relationship" aria-labelledby="h-carer-relationship">
+  <h3 id="h-carer-relationship">Relationship of the primary carer to adults on NASS, 2022 to 2025</h3>
+  <p class="subtitle">Adults not living in a residential setting who have a primary carer.</p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2022 table 2.10; NASS 2023 table 2.9; NASS 2024 table 2.9; NASS 2025 table 2.9</p>
+    
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Relationship of the primary carer to adults on NASS, 2022 to 2025</caption>
+        <thead><tr>
+          <th scope="col">Edition</th>
+          <th scope="col">Parent</th>
+          <th scope="col">Wife/husband/partner</th>
+          <th scope="col">Sibling</th>
+          <th scope="col">Daughter/son</th>
+          <th scope="col">Other relative</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">2022</th>
+          <td>9,527</td>
+          <td>1,409</td>
+          <td>1,358</td>
+          <td>244</td>
+          <td>189</td>
+        </tr>
+        <tr>
+          <th scope="row">2023</th>
+          <td>10,425</td>
+          <td>1,539</td>
+          <td>1,476</td>
+          <td>234</td>
+          <td>218</td>
+        </tr>
+        <tr>
+          <th scope="row">2024</th>
+          <td>11,631</td>
+          <td>1,793</td>
+          <td>1,617</td>
+          <td>318</td>
+          <td>236</td>
+        </tr>
+        <tr>
+          <th scope="row">2025</th>
+          <td>12,463</td>
+          <td>2,003</td>
+          <td>1,630</td>
+          <td>367</td>
+          <td>237</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/carer-relationship.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="carer-age" aria-labelledby="h-carer-age">
+  <h3 id="h-carer-age">Age group of primary carers, 2022 to 2025</h3>
+  <p class="subtitle">Counts, not published percentages: the percentage basis changed in 2025.</p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2022 table 2.11; NASS 2023 table 2.10; NASS 2024 table 2.10; NASS 2025 table 2.10</p>
+    <p>Carers aged 17 or under are suppressed in every edition.</p>
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Age group of primary carers, 2022 to 2025</caption>
+        <thead><tr>
+          <th scope="col">Edition</th>
+          <th scope="col">Between 18 and 49 years of age</th>
+          <th scope="col">Between 50 and 59 years of age</th>
+          <th scope="col">Between 60 and 69 years of age</th>
+          <th scope="col">Between 70 and 79 years of age</th>
+          <th scope="col">80 years of age or over</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">2022</th>
+          <td>2,333</td>
+          <td>3,806</td>
+          <td>2,468</td>
+          <td>1,235</td>
+          <td>336</td>
+        </tr>
+        <tr>
+          <th scope="row">2023</th>
+          <td>2,683</td>
+          <td>4,211</td>
+          <td>2,774</td>
+          <td>1,494</td>
+          <td>471</td>
+        </tr>
+        <tr>
+          <th scope="row">2024</th>
+          <td>3,299</td>
+          <td>4,807</td>
+          <td>3,006</td>
+          <td>1,565</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <th scope="row">2025</th>
+          <td>3,706</td>
+          <td>5,116</td>
+          <td>3,202</td>
+          <td>1,623</td>
+          <td>516</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/carer-age.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="day-services" aria-labelledby="h-day-services">
+  <h3 id="h-day-services">Adults accessing a day service, 2022 to 2025</h3>
+  <p class="subtitle">Adults only in every edition, so unaffected by the change in children's coverage.</p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2022 table 3.2; NASS 2023 table 3.2; NASS 2024 table 3.2; NASS 2025 table 3.2</p>
+    <p>2022 also reports a neuro-rehabilitative training programme, discontinued thereafter.</p>
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Adults accessing a day service, 2022 to 2025</caption>
+        <thead><tr>
+          <th scope="col">Edition</th>
+          <th scope="col">Day Programme</th>
+          <th scope="col">Rehabilitative training</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">2022</th>
+          <td>16,360</td>
+          <td>1,866</td>
+        </tr>
+        <tr>
+          <th scope="row">2023</th>
+          <td>17,752</td>
+          <td>1,917</td>
+        </tr>
+        <tr>
+          <th scope="row">2024</th>
+          <td>18,976</td>
+          <td>2,015</td>
+        </tr>
+        <tr>
+          <th scope="row">2025</th>
+          <td>19,390</td>
+          <td>1,833</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/day-services.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="age-sex-2025" aria-labelledby="h-age-sex-2025">
+  <h3 id="h-age-sex-2025">Service users on NASS by age and sex, 2025</h3>
+  <p class="subtitle">All ages. A single-year profile: not comparable with earlier editions.</p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2025 table 2.2</p>
+    <p>Counts under 5 are suppressed and appear as gaps.</p>
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Service users on NASS by age and sex, 2025</caption>
+        <thead><tr>
+          <th scope="col">Age group</th>
+          <th scope="col">Male</th>
+          <th scope="col">Female</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">0-4 years</th>
+          <td>6,142</td>
+          <td>3,347</td>
+        </tr>
+        <tr>
+          <th scope="row">5-9 years</th>
+          <td>14,553</td>
+          <td>7,135</td>
+        </tr>
+        <tr>
+          <th scope="row">10-14 years</th>
+          <td>12,547</td>
+          <td>6,281</td>
+        </tr>
+        <tr>
+          <th scope="row">15-19 years</th>
+          <td>9,162</td>
+          <td>5,174</td>
+        </tr>
+        <tr>
+          <th scope="row">20-24 years</th>
+          <td>3,420</td>
+          <td>1,890</td>
+        </tr>
+        <tr>
+          <th scope="row">25-29 years</th>
+          <td>2,344</td>
+          <td>1,295</td>
+        </tr>
+        <tr>
+          <th scope="row">30-34 years</th>
+          <td>1,613</td>
+          <td>1,181</td>
+        </tr>
+        <tr>
+          <th scope="row">35-39 years</th>
+          <td>1,451</td>
+          <td>1,212</td>
+        </tr>
+        <tr>
+          <th scope="row">40-44 years</th>
+          <td>1,612</td>
+          <td>1,399</td>
+        </tr>
+        <tr>
+          <th scope="row">45-49 years</th>
+          <td>1,705</td>
+          <td>1,465</td>
+        </tr>
+        <tr>
+          <th scope="row">50-54 years</th>
+          <td>1,834</td>
+          <td>1,666</td>
+        </tr>
+        <tr>
+          <th scope="row">55-59 years</th>
+          <td>1,842</td>
+          <td>1,812</td>
+        </tr>
+        <tr>
+          <th scope="row">60-64 years</th>
+          <td>1,832</td>
+          <td>1,786</td>
+        </tr>
+        <tr>
+          <th scope="row">65-69 years</th>
+          <td>1,220</td>
+          <td>1,184</td>
+        </tr>
+        <tr>
+          <th scope="row">≥ 70 years</th>
+          <td>1,479</td>
+          <td>1,689</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/age-sex-2025.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="adult-rate-by-county-2025" aria-labelledby="h-adult-rate-by-county-2025">
+  <h3 id="h-adult-rate-by-county-2025">Adults accessing disability services per 1,000 population, by county, 2025</h3>
+  <p class="subtitle">Rate per 1,000 of the general population aged 18 and over, by county of residence.</p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2025 table 2.1.1</p>
+    
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Adults accessing disability services per 1,000 population, by county, 2025</caption>
+        <thead><tr>
+          <th scope="col">County</th>
+          <th scope="col">2025 NASS adult registrations per 1,000 population</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">Dublin</th>
+          <td>7.7</td>
+        </tr>
+        <tr>
+          <th scope="row">Waterford</th>
+          <td>8.5</td>
+        </tr>
+        <tr>
+          <th scope="row">Longford</th>
+          <td>8.8</td>
+        </tr>
+        <tr>
+          <th scope="row">Meath</th>
+          <td>9.0</td>
+        </tr>
+        <tr>
+          <th scope="row">Wicklow</th>
+          <td>9.2</td>
+        </tr>
+        <tr>
+          <th scope="row">Galway</th>
+          <td>9.3</td>
+        </tr>
+        <tr>
+          <th scope="row">Offaly</th>
+          <td>9.3</td>
+        </tr>
+        <tr>
+          <th scope="row">Kildare</th>
+          <td>9.6</td>
+        </tr>
+        <tr>
+          <th scope="row">Laois</th>
+          <td>9.7</td>
+        </tr>
+        <tr>
+          <th scope="row">Wexford</th>
+          <td>9.9</td>
+        </tr>
+        <tr>
+          <th scope="row">Clare</th>
+          <td>10.2</td>
+        </tr>
+        <tr>
+          <th scope="row">Kerry</th>
+          <td>10.3</td>
+        </tr>
+        <tr>
+          <th scope="row">Roscommon</th>
+          <td>10.6</td>
+        </tr>
+        <tr>
+          <th scope="row">Limerick</th>
+          <td>10.8</td>
+        </tr>
+        <tr>
+          <th scope="row">Cavan</th>
+          <td>10.9</td>
+        </tr>
+        <tr>
+          <th scope="row">Tipperary</th>
+          <td>10.9</td>
+        </tr>
+        <tr>
+          <th scope="row">Carlow</th>
+          <td>11.0</td>
+        </tr>
+        <tr>
+          <th scope="row">Leitrim</th>
+          <td>11.0</td>
+        </tr>
+        <tr>
+          <th scope="row">Louth</th>
+          <td>11.2</td>
+        </tr>
+        <tr>
+          <th scope="row">Cork</th>
+          <td>11.4</td>
+        </tr>
+        <tr>
+          <th scope="row">Mayo</th>
+          <td>11.5</td>
+        </tr>
+        <tr>
+          <th scope="row">Kilkenny</th>
+          <td>11.9</td>
+        </tr>
+        <tr>
+          <th scope="row">Monaghan</th>
+          <td>11.9</td>
+        </tr>
+        <tr>
+          <th scope="row">Donegal</th>
+          <td>12.6</td>
+        </tr>
+        <tr>
+          <th scope="row">Sligo</th>
+          <td>15.7</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/adult-rate-by-county-2025.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="registrations-by-region-2025" aria-labelledby="h-registrations-by-region-2025">
+  <h3 id="h-registrations-by-region-2025">Service users on NASS by HSE Health Region, 2025</h3>
+  <p class="subtitle">Health Region of service, not of residence.</p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2025 table 2.1</p>
+    <p>Health Regions replaced Community Healthcare Organisations in 2025; no earlier edition uses this geography.</p>
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Service users on NASS by HSE Health Region, 2025</caption>
+        <thead><tr>
+          <th scope="col">HSE Health Region of service</th>
+          <th scope="col">Children</th>
+          <th scope="col">Adults</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">Dublin and North East</th>
+          <td>13,940</td>
+          <td>8,418</td>
+        </tr>
+        <tr>
+          <th scope="row">Dublin and Midlands</th>
+          <td>13,832</td>
+          <td>6,380</td>
+        </tr>
+        <tr>
+          <th scope="row">Dublin and South East</th>
+          <td>10,222</td>
+          <td>7,907</td>
+        </tr>
+        <tr>
+          <th scope="row">South West</th>
+          <td>9,167</td>
+          <td>6,313</td>
+        </tr>
+        <tr>
+          <th scope="row">Mid West</th>
+          <td>8,289</td>
+          <td>3,086</td>
+        </tr>
+        <tr>
+          <th scope="row">West and North West</th>
+          <td>7,635</td>
+          <td>6,184</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/registrations-by-region-2025.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-chart-id="id-level-2025" aria-labelledby="h-id-level-2025">
+  <h3 id="h-id-level-2025">Level of intellectual disability among adults on NASS, 2025</h3>
+  <p class="subtitle">First published in the 2025 edition.</p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2025 table 5.2</p>
+    
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>Level of intellectual disability among adults on NASS, 2025</caption>
+        <thead><tr>
+          <th scope="col">Level of intellectual disability</th>
+          <th scope="col">Adults (n)</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+          <th scope="row">Borderline</th>
+          <td>332</td>
+        </tr>
+        <tr>
+          <th scope="row">Mild</th>
+          <td>7,046</td>
+        </tr>
+        <tr>
+          <th scope="row">Moderate</th>
+          <td>9,621</td>
+        </tr>
+        <tr>
+          <th scope="row">Severe</th>
+          <td>2,857</td>
+        </tr>
+        <tr>
+          <th scope="row">Profournd</th>
+          <td>650</td>
+        </tr>
+        <tr>
+          <th scope="row">Not verified</th>
+          <td>427</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/id-level-2025.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>
+
+<section class="chart-block" data-facet-chart="adults-by-region-age-sex-2025" aria-labelledby="h-adults-by-region-age-sex-2025">
+  <h3 id="h-adults-by-region-age-sex-2025">Adults in disability services by age group and sex, 2025</h3>
+  <p class="subtitle">Choose a Health Region to see its age and sex profile. Adults only, so unaffected by the changes in how children were counted.</p>
+
+  <div class="facet">
+    <label for="facet-select">HSE Health Region</label>
+    <select id="facet-select">
+          <option value="All regions">All regions</option>
+          <option value="Dublin and North East">Dublin and North East</option>
+          <option value="Dublin and Midlands">Dublin and Midlands</option>
+          <option value="Dublin and South East">Dublin and South East</option>
+          <option value="South West">South West</option>
+          <option value="Mid West">Mid West</option>
+          <option value="West and North West">West and North West</option>
+    </select>
+  </div>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: NASS 2025 table 2.4.1</p>
+    <p>Region of service, not of residence. The data table below lists every region.</p>
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <p class="chart-hint" data-table-note></p>
+    <div class="table-scroll">
+      <table>
+        <caption>Adults in disability services by age group and sex, 2025</caption>
+        <thead><tr>
+          <th scope="col">HSE Health Region</th>
+          <th scope="col">Age group</th>
+          <th scope="col">Male</th>
+          <th scope="col">Female</th>
+        </tr></thead>
+        <tbody>
+        <tr data-facet="All regions"><th scope="row">All regions</th><td class="label">18 - 24 years</td><td>4,315</td><td>2,350</td></tr>
+        <tr data-facet="All regions"><th scope="row">All regions</th><td class="label">25 - 39 years</td><td>5,408</td><td>3,687</td></tr>
+        <tr data-facet="All regions"><th scope="row">All regions</th><td class="label">40 - 59 years</td><td>6,993</td><td>6,342</td></tr>
+        <tr data-facet="All regions"><th scope="row">All regions</th><td class="label">60 - 69 years</td><td>3,052</td><td>2,970</td></tr>
+        <tr data-facet="All regions"><th scope="row">All regions</th><td class="label">70 years and over</td><td>1,479</td><td>1,689</td></tr>
+        <tr data-facet="Dublin and North East"><th scope="row">Dublin and North East</th><td class="label">18 - 24 years</td><td>915</td><td>490</td></tr>
+        <tr data-facet="Dublin and North East"><th scope="row">Dublin and North East</th><td class="label">25 - 39 years</td><td>1,116</td><td>742</td></tr>
+        <tr data-facet="Dublin and North East"><th scope="row">Dublin and North East</th><td class="label">40 - 59 years</td><td>1,526</td><td>1,471</td></tr>
+        <tr data-facet="Dublin and North East"><th scope="row">Dublin and North East</th><td class="label">60 - 69 years</td><td>775</td><td>747</td></tr>
+        <tr data-facet="Dublin and North East"><th scope="row">Dublin and North East</th><td class="label">70 years and over</td><td>264</td><td>372</td></tr>
+        <tr data-facet="Dublin and Midlands"><th scope="row">Dublin and Midlands</th><td class="label">18 - 24 years</td><td>869</td><td>457</td></tr>
+        <tr data-facet="Dublin and Midlands"><th scope="row">Dublin and Midlands</th><td class="label">25 - 39 years</td><td>1,015</td><td>637</td></tr>
+        <tr data-facet="Dublin and Midlands"><th scope="row">Dublin and Midlands</th><td class="label">40 - 59 years</td><td>1,173</td><td>932</td></tr>
+        <tr data-facet="Dublin and Midlands"><th scope="row">Dublin and Midlands</th><td class="label">60 - 69 years</td><td>434</td><td>401</td></tr>
+        <tr data-facet="Dublin and Midlands"><th scope="row">Dublin and Midlands</th><td class="label">70 years and over</td><td>193</td><td>269</td></tr>
+        <tr data-facet="Dublin and South East"><th scope="row">Dublin and South East</th><td class="label">18 - 24 years</td><td>784</td><td>429</td></tr>
+        <tr data-facet="Dublin and South East"><th scope="row">Dublin and South East</th><td class="label">25 - 39 years</td><td>1,040</td><td>740</td></tr>
+        <tr data-facet="Dublin and South East"><th scope="row">Dublin and South East</th><td class="label">40 - 59 years</td><td>1,560</td><td>1,250</td></tr>
+        <tr data-facet="Dublin and South East"><th scope="row">Dublin and South East</th><td class="label">60 - 69 years</td><td>726</td><td>582</td></tr>
+        <tr data-facet="Dublin and South East"><th scope="row">Dublin and South East</th><td class="label">70 years and over</td><td>444</td><td>352</td></tr>
+        <tr data-facet="South West"><th scope="row">South West</th><td class="label">18 - 24 years</td><td>836</td><td>458</td></tr>
+        <tr data-facet="South West"><th scope="row">South West</th><td class="label">25 - 39 years</td><td>1,040</td><td>603</td></tr>
+        <tr data-facet="South West"><th scope="row">South West</th><td class="label">40 - 59 years</td><td>1,044</td><td>933</td></tr>
+        <tr data-facet="South West"><th scope="row">South West</th><td class="label">60 - 69 years</td><td>415</td><td>425</td></tr>
+        <tr data-facet="South West"><th scope="row">South West</th><td class="label">70 years and over</td><td>270</td><td>287</td></tr>
+        <tr data-facet="Mid West"><th scope="row">Mid West</th><td class="label">18 - 24 years</td><td>277</td><td>152</td></tr>
+        <tr data-facet="Mid West"><th scope="row">Mid West</th><td class="label">25 - 39 years</td><td>361</td><td>335</td></tr>
+        <tr data-facet="Mid West"><th scope="row">Mid West</th><td class="label">40 - 59 years</td><td>580</td><td>617</td></tr>
+        <tr data-facet="Mid West"><th scope="row">Mid West</th><td class="label">60 - 69 years</td><td>264</td><td>267</td></tr>
+        <tr data-facet="Mid West"><th scope="row">Mid West</th><td class="label">70 years and over</td><td>105</td><td>128</td></tr>
+        <tr data-facet="West and North West"><th scope="row">West and North West</th><td class="label">18 - 24 years</td><td>634</td><td>364</td></tr>
+        <tr data-facet="West and North West"><th scope="row">West and North West</th><td class="label">25 - 39 years</td><td>836</td><td>630</td></tr>
+        <tr data-facet="West and North West"><th scope="row">West and North West</th><td class="label">40 - 59 years</td><td>1,110</td><td>1,139</td></tr>
+        <tr data-facet="West and North West"><th scope="row">West and North West</th><td class="label">60 - 69 years</td><td>438</td><td>548</td></tr>
+        <tr data-facet="West and North West"><th scope="row">West and North West</th><td class="label">70 years and over</td><td>203</td><td>281</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="downloads"><a href="data/adults-by-region-age-sex-2025.csv" download>Download this data as CSV</a> &mdash; the download contains every HSE Health Region, not just the one shown.</p>
+  </details>
+</section>
+  </main>
+
+  <div class="attribution">
+    <p><strong>Source.</strong> National Ability Supports System (NASS) 2025 statistical tables, Health Research Board. <a href="https://www.hrb.ie/publication/overview-of-people-engaging-with-disability-services-bulletin-2025/">View the original bulletin</a>.</p>
+    <p>Reproduced from tables published by the Health Research Board. This page is a
+    prototype for internal review and is not an official HRB publication. No HRB logo or
+    crest is used.</p>
+  </div>
+
+</div></div>
+
+<footer class="site"><div class="wrap"><div class="content">
+  <p>Generated 31 August 2026 by the NASS visualisation pipeline. Edition 2025.</p>
+</div></div></footer>
+
+<script src="../../assets/js/chart.umd.min.js"></script>
+<script src="data/charts-data.js"></script>
+<script src="../../assets/js/nass-charts.js"></script>
+<script src="data/adults-by-region-age-sex-2025.js"></script>
+<script src="../../assets/js/nass-facet.js"></script>
+</body>
+</html>

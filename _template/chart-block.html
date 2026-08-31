@@ -1,0 +1,23 @@
+<section class="chart-block" data-chart-id="{{ID}}" aria-labelledby="h-{{ID}}">
+  <h3 id="h-{{ID}}">{{TITLE}}</h3>
+  <p class="subtitle">{{SUBTITLE}}</p>
+
+  <div class="chart-figure"><canvas></canvas></div>
+  <p class="chart-hint">Use the arrow keys to step through the values when the chart has focus.</p>
+  <div class="chart-live visually-hidden" role="status" aria-live="polite"></div>
+
+  <ul class="legend"></ul>
+
+  <div class="chart-foot">
+    <p class="source">Source: {{SOURCE}}</p>
+    {{SOURCE_NOTE}}
+  </div>
+
+  <details>
+    <summary>Show data table</summary>
+    <div class="table-scroll">
+{{TABLE}}
+    </div>
+    <p class="downloads"><a href="data/{{ID}}.csv" download>Download this data as CSV</a></p>
+  </details>
+</section>

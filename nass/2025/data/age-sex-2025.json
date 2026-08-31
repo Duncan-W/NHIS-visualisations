@@ -1,0 +1,31 @@
+{
+  "id": "age-sex-2025",
+  "type": "bar",
+  "title": "Service users on NASS by age and sex, 2025",
+  "subtitle": "All ages. A single-year profile: not comparable with earlier editions.",
+  "x_field": "category",
+  "x_label": "Age group",
+  "y_label": "Service users (n)",
+  "source": "NASS 2025 table 2.2",
+  "source_note": "Counts under 5 are suppressed and appear as gaps.",
+  "suppressed_present": false,
+  "labels": ["0-4 years", "5-9 years", "10-14 years", "15-19 years", "20-24 years", "25-29 years", "30-34 years", "35-39 years", "40-44 years", "45-49 years", "50-54 years", "55-59 years", "60-64 years", "65-69 years", "≥ 70 years"],
+  "series": [
+    {
+      "name": "Male",
+      "color": "#000099",
+      "dash": "",
+      "point": "circle",
+      "data": [6142, 14553, 12547, 9162, 3420, 2344, 1613, 1451, 1612, 1705, 1834, 1842, 1832, 1220, 1479],
+      "suppressed": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+    },
+    {
+      "name": "Female",
+      "color": "#e21776",
+      "dash": "6,3",
+      "point": "triangle",
+      "data": [3347, 7135, 6281, 5174, 1890, 1295, 1181, 1212, 1399, 1465, 1666, 1812, 1786, 1184, 1689],
+      "suppressed": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "living-arrangements",
+  "type": "line",
+  "title": "Living arrangements of adults on NASS, 2022 to 2025",
+  "subtitle": "",
+  "x_field": "edition_year",
+  "x_label": "Edition",
+  "y_label": "Adults (n)",
+  "source": "NASS 2022 table 2.7; NASS 2023 table 2.6; NASS 2024 table 2.6; NASS 2025 table 2.6",
+  "source_note": "Sub-categories within each grouping are in the data table below.",
+  "suppressed_present": false,
+  "labels": ["2022", "2023", "2024", "2025"],
+  "series": [
+    {
+      "name": "Living with family",
+      "color": "#000099",
+      "dash": "",
+      "point": "circle",
+      "data": [16611, 17941, 19874, 21428],
+      "suppressed": [false, false, false, false]
+    },
+    {
+      "name": "Residential setting",
+      "color": "#e21776",
+      "dash": "6,3",
+      "point": "triangle",
+      "data": [7569, 8027, 8225, 8539],
+      "suppressed": [false, false, false, false]
+    },
+    {
+      "name": "Living alone",
+      "color": "#0f7a58",
+      "dash": "2,2",
+      "point": "rect",
+      "data": [2920, 3361, 3819, 4223],
+      "suppressed": [false, false, false, false]
+    },
+    {
+      "name": "Living with non-relatives",
+      "color": "#766a62",
+      "dash": "8,3,2,3",
+      "point": "rectRot",
+      "data": [400, 452, 482, 525],
+      "suppressed": [false, false, false, false]
+    }
+  ]
+}

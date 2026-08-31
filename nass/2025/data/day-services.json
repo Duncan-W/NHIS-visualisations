@@ -1,0 +1,31 @@
+{
+  "id": "day-services",
+  "type": "line",
+  "title": "Adults accessing a day service, 2022 to 2025",
+  "subtitle": "Adults only in every edition, so unaffected by the change in children's coverage.",
+  "x_field": "edition_year",
+  "x_label": "Edition",
+  "y_label": "Adults (n)",
+  "source": "NASS 2022 table 3.2; NASS 2023 table 3.2; NASS 2024 table 3.2; NASS 2025 table 3.2",
+  "source_note": "2022 also reports a neuro-rehabilitative training programme, discontinued thereafter.",
+  "suppressed_present": false,
+  "labels": ["2022", "2023", "2024", "2025"],
+  "series": [
+    {
+      "name": "Day Programme",
+      "color": "#000099",
+      "dash": "",
+      "point": "circle",
+      "data": [16360, 17752, 18976, 19390],
+      "suppressed": [false, false, false, false]
+    },
+    {
+      "name": "Rehabilitative training",
+      "color": "#e21776",
+      "dash": "6,3",
+      "point": "triangle",
+      "data": [1866, 1917, 2015, 1833],
+      "suppressed": [false, false, false, false]
+    }
+  ]
+}

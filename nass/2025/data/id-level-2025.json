@@ -1,0 +1,23 @@
+{
+  "id": "id-level-2025",
+  "type": "column",
+  "title": "Level of intellectual disability among adults on NASS, 2025",
+  "subtitle": "First published in the 2025 edition.",
+  "x_field": "category",
+  "x_label": "Level of intellectual disability",
+  "y_label": "Adults (n)",
+  "source": "NASS 2025 table 5.2",
+  "source_note": "",
+  "suppressed_present": false,
+  "labels": ["Borderline", "Mild", "Moderate", "Severe", "Profournd", "Not verified"],
+  "series": [
+    {
+      "name": "Adults (n)",
+      "color": "#000099",
+      "dash": "",
+      "point": "circle",
+      "data": [332, 7046, 9621, 2857, 650, 427],
+      "suppressed": [false, false, false, false, false, false]
+    }
+  ]
+}

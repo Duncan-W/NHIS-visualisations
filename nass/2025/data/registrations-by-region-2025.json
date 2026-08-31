@@ -1,0 +1,31 @@
+{
+  "id": "registrations-by-region-2025",
+  "type": "column",
+  "title": "Service users on NASS by HSE Health Region, 2025",
+  "subtitle": "Health Region of service, not of residence.",
+  "x_field": "category",
+  "x_label": "HSE Health Region of service",
+  "y_label": "Service users (n)",
+  "source": "NASS 2025 table 2.1",
+  "source_note": "Health Regions replaced Community Healthcare Organisations in 2025; no earlier edition uses this geography.",
+  "suppressed_present": false,
+  "labels": ["Dublin and North East", "Dublin and Midlands", "Dublin and South East", "South West", "Mid West", "West and North West"],
+  "series": [
+    {
+      "name": "Children",
+      "color": "#000099",
+      "dash": "",
+      "point": "circle",
+      "data": [13940, 13832, 10222, 9167, 8289, 7635],
+      "suppressed": [false, false, false, false, false, false]
+    },
+    {
+      "name": "Adults",
+      "color": "#e21776",
+      "dash": "6,3",
+      "point": "triangle",
+      "data": [8418, 6380, 7907, 6313, 3086, 6184],
+      "suppressed": [false, false, false, false, false, false]
+    }
+  ]
+}

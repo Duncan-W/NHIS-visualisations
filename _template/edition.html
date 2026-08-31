@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NASS {{EDITION}} — statistics on disability services in Ireland (prototype)</title>
+<meta name="description" content="Interactive charts reproduced from the published NASS {{EDITION}} statistical tables. Prototype for internal review.">
+<link rel="stylesheet" href="{{ASSETS}}css/tokens.css">
+<link rel="stylesheet" href="{{ASSETS}}css/site.css">
+</head>
+<body>
+
+<!--<div class="prototype-notice">
+  <div class="wrap"><div class="content">
+    <strong>Prototype.</strong> Figures reproduced from published NASS statistical bulletins.
+    Not an official HRB publication.
+  </div></div>
+</div>-->
+
+<div class="wrap"><div class="content">
+
+  <header class="masthead">
+    <p class="eyebrow">National Ability Supports System</p>
+    <h1>Disability services in Ireland, {{EDITION}}</h1>
+    <p class="standfirst">{{CHART_COUNT}} charts reproduced from the published NASS statistical
+    tables. Trends run 2022 to {{EDITION}}; single-year profiles show {{EDITION}} only.
+    Every chart carries the figures behind it as a table you can read or download.</p>
+  </header>
+
+  <main>
+    <div class="note">
+      <h3>Reading these figures</h3>
+      <p> The trend charts here use the adult
+      population, which is defined consistently from 2022 to 2025.</p>
+      <p>Trends are shown as counts rather than published percentages</p>
+      <p>Full detail is in the pipeline's validation report, which lists every difference
+      found between editions.</p>
+    </div>
+
+{{CHARTS}}
+
+{{FACET_CHART}}
+  </main>
+
+  <div class="attribution">
+    <p><strong>Source.</strong> {{ATTRIBUTION}}</p>
+    <p>Reproduced from tables published by the Health Research Board. This page is a
+    prototype for internal review and is not an official HRB publication. No HRB logo or
+    crest is used.</p>
+  </div>
+
+</div></div>
+
+<footer class="site"><div class="wrap"><div class="content">
+  <p>Generated {{GENERATED}} by the NASS visualisation pipeline. Edition {{EDITION}}.</p>
+</div></div></footer>
+
+<script src="{{ASSETS}}js/chart.umd.min.js"></script>
+<script src="data/charts-data.js"></script>
+<script src="{{ASSETS}}js/nass-charts.js"></script>
+{{FACET_SCRIPTS}}
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "id": "adult-rate-by-county-2025",
+  "type": "bar",
+  "title": "Adults accessing disability services per 1,000 population, by county, 2025",
+  "subtitle": "Rate per 1,000 of the general population aged 18 and over, by county of residence.",
+  "x_field": "category",
+  "x_label": "County",
+  "y_label": "Adults per 1,000 population",
+  "source": "NASS 2025 table 2.1.1",
+  "source_note": "",
+  "suppressed_present": false,
+  "labels": ["Dublin", "Waterford", "Longford", "Meath", "Wicklow", "Galway", "Offaly", "Kildare", "Laois", "Wexford", "Clare", "Kerry", "Roscommon", "Limerick", "Cavan", "Tipperary", "Carlow", "Leitrim", "Louth", "Cork", "Mayo", "Kilkenny", "Monaghan", "Donegal", "Sligo"],
+  "series": [
+    {
+      "name": "2025 NASS adult registrations per 1,000 population",
+      "color": "#000099",
+      "dash": "",
+      "point": "circle",
+      "data": [7.7, 8.5, 8.8, 9, 9.2, 9.3, 9.3, 9.6, 9.7, 9.9, 10.2, 10.3, 10.6, 10.8, 10.9, 10.9, 11, 11, 11.2, 11.4, 11.5, 11.9, 11.9, 12.6, 15.7],
+      "suppressed": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+    }
+  ]
+}

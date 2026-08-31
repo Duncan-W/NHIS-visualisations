@@ -1,0 +1,304 @@
+/* ---------------------------------------------------------------------------
+   NASS prototype — page styles.
+
+   Consumes the tokens in tokens.css, which is copied from config/tokens.css by
+   R/05-render.R so that the tokens have a single source of truth.
+
+   No webfonts: the site must work when opened from file:// with no network, so
+   a Google Fonts link would fail silently offline. The system stack in
+   --font-body is a neo-grotesque on every target platform, which is the same
+   register as the HRB site's Apercu.
+
+   Single light theme. The brief excludes dark mode.
+   --------------------------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: var(--size-root); }
+
+body {
+  margin: 0;
+  background: var(--colour-page);
+  color: var(--colour-text);
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: var(--line-body);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Layout -------------------------------------------------------------------- */
+
+.wrap {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 calc(var(--space) * 3);
+}
+.content {
+  max-width: 54rem;      /* generous measure; charts share this width exactly */
+  margin: 0 auto;
+}
+
+/* Prototype notice ---------------------------------------------------------- */
+/* Tinted, not alarming - but above the fold on every page.
+   Deliberately NOT called "banner": .banner, #banner and similar are hidden by
+   cosmetic rules in common ad-blocker filter lists, and this is the one element
+   the brief requires every page to show. */
+
+.prototype-notice {
+  background: var(--colour-tint);
+  border-bottom: 1px solid var(--colour-rule);
+  color: var(--colour-text);
+  font-size: var(--size-small);
+  line-height: var(--line-small);
+  padding: calc(var(--space) * 1.5) 0;
+}
+.prototype-notice strong { font-weight: 700; }
+
+/* Masthead ------------------------------------------------------------------ */
+
+.masthead {
+  border-bottom: 2px solid var(--hrb-navy);
+  padding: calc(var(--space) * 5) 0 calc(var(--space) * 3);
+  margin-bottom: calc(var(--space) * 5);
+}
+.masthead .eyebrow {
+  font-size: var(--size-small);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--colour-muted);
+  margin: 0 0 calc(var(--space) * 1.5);
+}
+h1 {
+  font-size: var(--size-h1);
+  line-height: var(--line-h1);
+  letter-spacing: var(--track-h1);
+  font-weight: 700;
+  margin: 0;
+  text-wrap: balance;
+}
+.masthead .standfirst {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--colour-muted);
+  margin: calc(var(--space) * 2) 0 0;
+  max-width: 42rem;
+}
+
+h2 {
+  font-size: var(--size-h2);
+  line-height: var(--line-h2);
+  font-weight: 700;
+  margin: calc(var(--space) * 6) 0 calc(var(--space) * 2);
+  text-wrap: balance;
+}
+h3 {
+  font-size: var(--size-h3);
+  line-height: var(--line-h3);
+  font-weight: 700;
+  margin: 0;
+  text-wrap: balance;
+}
+p { margin: 0 0 calc(var(--space) * 2); }
+a { color: var(--colour-link); }
+a:hover { text-decoration: underline; }
+
+:focus-visible {
+  outline: 3px solid var(--hrb-navy);
+  outline-offset: 2px;
+}
+
+/* Chart block --------------------------------------------------------------- */
+/* Same elements in the same order, every time: title, subtitle, chart, legend,
+   source note, data table toggle, CSV link. */
+
+.chart-block {
+  border-top: 1px solid var(--colour-rule);
+  padding-top: calc(var(--space) * 4);
+  margin-bottom: calc(var(--space) * 7);
+}
+.chart-block .subtitle {
+  color: var(--colour-muted);
+  margin: calc(var(--space) * 1) 0 calc(var(--space) * 3);
+  max-width: 42rem;
+}
+
+.chart-figure {
+  margin: 0 0 calc(var(--space) * 2);
+  position: relative;
+  height: 360px;
+}
+.chart-figure:focus-visible { outline: 3px solid var(--hrb-navy); outline-offset: 4px; }
+/* Chart.js owns the canvas's inline width/height: it keeps the display size and
+   the backing store in step, and resizes both when the container changes. Do
+   NOT force them from CSS - an !important here stops it correcting the width
+   when the scrollbar appears as the page grows, and the chart is left stale
+   until a reload. The parent's definite height is what sizing keys off. */
+.chart-figure canvas { display: block; }
+
+.chart-hint {
+  font-size: var(--size-small);
+  color: var(--colour-muted);
+  margin: 0 0 calc(var(--space) * 2);
+}
+
+/* Legend: real buttons, so it is keyboard operable. Each swatch encodes line
+   style and point shape as well as colour — colour never carries meaning alone. */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--space) * 1) calc(var(--space) * 2);
+  margin: 0 0 calc(var(--space) * 2);
+  padding: 0;
+  list-style: none;
+}
+.legend button {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--space) * 1);
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 4px 6px;
+  font: inherit;
+  font-size: var(--size-small);
+  color: var(--colour-text);
+  cursor: pointer;
+}
+.legend button:hover { border-color: var(--colour-rule); }
+.legend button[aria-pressed="false"] { color: var(--colour-muted); }
+.legend button[aria-pressed="false"] .legend-swatch { opacity: 0.3; }
+.legend button[aria-pressed="false"] .legend-name { text-decoration: line-through; }
+.legend-swatch { flex: none; display: block; }
+
+/* Source note, data table, download ----------------------------------------- */
+
+.chart-foot {
+  font-size: var(--size-small);
+  line-height: var(--line-small);
+  color: var(--colour-muted);
+}
+.chart-foot p { margin: 0 0 calc(var(--space) * 1); }
+.chart-foot .source { color: var(--colour-text); }
+
+details {
+  margin: calc(var(--space) * 2) 0 0;
+  border-top: 1px solid var(--colour-rule);
+  padding-top: calc(var(--space) * 1.5);
+}
+summary {
+  cursor: pointer;
+  font-size: var(--size-small);
+  color: var(--colour-link);
+  width: fit-content;
+}
+summary:hover { text-decoration: underline; }
+
+.table-scroll { overflow-x: auto; margin-top: calc(var(--space) * 2); }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 28rem;
+  font-size: var(--size-small);
+  font-variant-numeric: tabular-nums;
+}
+caption {
+  text-align: left;
+  color: var(--colour-muted);
+  font-size: var(--size-small);
+  padding-bottom: calc(var(--space) * 1);
+}
+th, td {
+  text-align: right;
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--colour-rule);
+}
+th:first-child, td:first-child { text-align: left; padding-left: 0; }
+td.label, th.label { text-align: left; }   /* a category name, not a figure */
+thead th {
+  border-bottom: 2px solid var(--hrb-navy);
+  font-weight: 700;
+  color: var(--colour-text);
+}
+td.suppressed { color: var(--colour-muted); }
+
+.downloads {
+  margin-top: calc(var(--space) * 2);
+  font-size: var(--size-small);
+}
+
+/* Facet control (preview page only) ------------------------------------------ */
+
+.facet {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--space) * 1.5);
+  margin: 0 0 calc(var(--space) * 3);
+  flex-wrap: wrap;
+}
+.facet label { font-weight: 700; font-size: var(--size-small); }
+.facet select {
+  font: inherit;
+  font-size: var(--size-small);
+  padding: 6px 10px;
+  border: 1px solid var(--colour-muted);
+  border-radius: 2px;
+  background: var(--colour-page);
+  color: var(--colour-text);
+  min-width: 16rem;
+}
+
+/* Notes, index cards, footer -------------------------------------------------- */
+
+.note {
+  background: var(--colour-tint);
+  border-left: 3px solid var(--hrb-navy);
+  padding: calc(var(--space) * 2.5) calc(var(--space) * 3);
+  margin: calc(var(--space) * 4) 0;
+}
+.note h3 { margin-bottom: calc(var(--space) * 1.5); }
+.note p:last-child, .note ul:last-child { margin-bottom: 0; }
+.note ul { margin: 0 0 calc(var(--space) * 2); padding-left: 1.25rem; }
+.note li { margin-bottom: calc(var(--space) * 0.75); }
+
+.editions { list-style: none; padding: 0; margin: calc(var(--space) * 3) 0 0; }
+.editions li { border-top: 1px solid var(--colour-rule); padding: calc(var(--space) * 2) 0; }
+.editions a { font-size: var(--size-h3); font-weight: 700; }
+.editions .meta { color: var(--colour-muted); font-size: var(--size-small); margin: 4px 0 0; }
+
+.attribution {
+  border-top: 1px solid var(--colour-rule);
+  margin-top: calc(var(--space) * 5);
+  padding-top: calc(var(--space) * 3);
+  font-size: var(--size-small);
+  line-height: var(--line-small);
+  color: var(--colour-muted);
+}
+footer.site {
+  border-top: 1px solid var(--colour-rule);
+  margin-top: calc(var(--space) * 5);
+  padding: calc(var(--space) * 3) 0 calc(var(--space) * 8);
+  font-size: var(--size-small);
+  color: var(--colour-muted);
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* Responsive ------------------------------------------------------------------ */
+
+@media (max-width: 640px) {
+  h1 { font-size: 2rem; line-height: 2.375rem; letter-spacing: -0.5px; }
+  h2 { font-size: 1.5rem; line-height: 2rem; }
+  .chart-figure { height: 300px; }
+  .wrap { padding: 0 calc(var(--space) * 2); }
+  .facet select { min-width: 0; width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
