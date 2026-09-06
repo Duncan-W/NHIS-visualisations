@@ -1,0 +1,64 @@
+{
+ "id": "length-of-stay-2024",
+ "type": "column",
+ "title": "Length of stay of discharges, 2024",
+ "subtitle": "Discharges from psychiatric units and hospitals, by length of stay.",
+ "x_field": "category",
+ "x_label": "Length of stay",
+ "y_label": "Discharges (n)",
+ "source": "NPIRS 2024 table 2.9",
+ "source_note": "Counts of fewer than five are suppressed in the source and appear as gaps.",
+ "labels": [
+  "Under 1 week",
+  "1-< 2 weeks",
+  "2-< 4 weeks",
+  "1-< 3 months",
+  "3 months-< 1 year",
+  "1-< 5 years",
+  "5-< 10 years",
+  "10-< 25 years",
+  "25 years and over"
+ ],
+ "series": [
+  {
+   "name": "Discharges",
+   "color": "#000099",
+   "dash": "",
+   "point": "circle",
+   "data": [
+    4546.0,
+    2742.0,
+    3118.0,
+    4147.0,
+    744.0,
+    112.0,
+    14.0,
+    11.0,
+    null
+   ],
+   "text": [
+    "4546",
+    "2742",
+    "3118",
+    "4147",
+    "744",
+    "112",
+    "14",
+    "11",
+    "<5"
+   ],
+   "suppressed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+   ]
+  }
+ ],
+ "suppressed_present": true
+}

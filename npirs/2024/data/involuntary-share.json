@@ -1,0 +1,52 @@
+{
+ "id": "involuntary-share",
+ "type": "line",
+ "title": "Involuntary share of psychiatric admissions, 2019 to 2024",
+ "subtitle": "Involuntary admissions as a percentage of all admissions. Legal status categories are identical in every edition.",
+ "x_field": "category",
+ "x_label": "Year",
+ "y_label": "Involuntary admissions (%)",
+ "source": "NPIRS table 2.7a, 2019 to 2024 editions",
+ "source_note": "Calculated from the published counts of involuntary and all admissions. In every year the voluntary and involuntary counts sum exactly to the total.",
+ "labels": [
+  "2019",
+  "2020",
+  "2021",
+  "2022",
+  "2023",
+  "2024"
+ ],
+ "series": [
+  {
+   "name": "Involuntary share",
+   "color": "#000099",
+   "dash": "",
+   "point": "circle",
+   "data": [
+    14.1,
+    16.0,
+    17.2,
+    16.8,
+    16.4,
+    16.6
+   ],
+   "text": [
+    "14.1",
+    "16.0",
+    "17.2",
+    "16.8",
+    "16.4",
+    "16.6"
+   ],
+   "suppressed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  }
+ ],
+ "suppressed_present": false
+}

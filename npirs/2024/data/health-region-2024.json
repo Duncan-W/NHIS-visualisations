@@ -1,0 +1,52 @@
+{
+ "id": "health-region-2024",
+ "type": "column",
+ "title": "Admission rates by HSE Health Region, 2024",
+ "subtitle": "All admissions per 100,000 total population. Health Regions replaced Community Healthcare Organisations in 2024, so no earlier edition uses this geography.",
+ "x_field": "category",
+ "x_label": "HSE Health Region",
+ "y_label": "Admissions per 100,000",
+ "source": "NPIRS 2024 table 2.15",
+ "source_note": "Non-resident admissions are excluded: they have no catchment population, so no rate is published.",
+ "labels": [
+  "HSE Dublin and North East",
+  "HSE Dublin and Midlands",
+  "HSE Dublin and South East",
+  "HSE South West",
+  "HSE Mid-West",
+  "HSE West and North West"
+ ],
+ "series": [
+  {
+   "name": "All admissions",
+   "color": "#000099",
+   "dash": "",
+   "point": "circle",
+   "data": [
+    288.9630439013212,
+    302.18895246276327,
+    305.366738392882,
+    320.274799018112,
+    237.2542421300589,
+    331.3014738111253
+   ],
+   "text": [
+    "288.9630439013212",
+    "302.18895246276327",
+    "305.366738392882",
+    "320.274799018112",
+    "237.2542421300589",
+    "331.3014738111253"
+   ],
+   "suppressed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  }
+ ],
+ "suppressed_present": false
+}

@@ -1,0 +1,96 @@
+{
+ "id": "age-sex-2024",
+ "type": "bar",
+ "title": "Admission rates by age and sex, 2024",
+ "subtitle": "All admissions per 100,000 total population.",
+ "x_field": "category",
+ "x_label": "Age group",
+ "y_label": "Admissions per 100,000",
+ "source": "NPIRS 2024 table 2.3",
+ "source_note": "Under 18 and unspecified age are not shown: no rate is published for them. There were 5 admissions of people under 18 in 2024.",
+ "labels": [
+  "18-19",
+  "20-24",
+  "25-34",
+  "35-44",
+  "45-54",
+  "55-64",
+  "65-74",
+  "75 and over"
+ ],
+ "series": [
+  {
+   "name": "Male",
+   "color": "#000099",
+   "dash": "",
+   "point": "circle",
+   "data": [
+    393.90716970958704,
+    521.7245860298752,
+    541.7079388792362,
+    408.83543136176854,
+    387.98649649319896,
+    338.7699507561205,
+    336.46723252239656,
+    274.6422599901962
+   ],
+   "text": [
+    "393.90716970958704",
+    "521.7245860298752",
+    "541.7079388792362",
+    "408.83543136176854",
+    "387.98649649319896",
+    "338.7699507561205",
+    "336.46723252239656",
+    "274.6422599901962"
+   ],
+   "suppressed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  },
+  {
+   "name": "Female",
+   "color": "#e21776",
+   "dash": "6,3",
+   "point": "triangle",
+   "data": [
+    363.88411452284726,
+    406.7318404450978,
+    369.55353684289446,
+    361.4047050801227,
+    403.52737623486075,
+    382.61699119265427,
+    438.12537606132867,
+    378.2878851292618
+   ],
+   "text": [
+    "363.88411452284726",
+    "406.7318404450978",
+    "369.55353684289446",
+    "361.4047050801227",
+    "403.52737623486075",
+    "382.61699119265427",
+    "438.12537606132867",
+    "378.2878851292618"
+   ],
+   "suppressed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  }
+ ],
+ "suppressed_present": false
+}
